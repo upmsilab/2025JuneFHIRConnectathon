@@ -3,8 +3,8 @@
 This track will demonstrate how a Point of Service (POS) application can submit health data to a central repository implemented with a HAPI FHIR Server. The track uses the draft NHDR FHIR Implementation Guide (IG) defining the required profiles and value sets for core clinical data exchange (Patient, Encounter, Mediation, Observation etc.).
 
 ## Track Goals
-* Validate conformance of resources to draft NHDR FHIR IG profiles.
 * Successfully submit FHIR resources to a central server.
+* Successfully submit FHIR bundle to a central server.
 * Use $validate operation for IG conformance.
 * Provide feedback to refine the IG and profiles.
 
