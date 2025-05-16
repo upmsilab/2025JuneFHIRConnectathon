@@ -27,8 +27,8 @@ This track will demonstrate how a Point of Service (POS) application can submit 
 
 ### Track goals
 
-- Validate conformance of resources to draft NHDR FHIR IG profiles.
 - Successfully submit FHIR resources to a central server.
+- Successfully submit FHIR bundle to a central server.
 - Use $validate operation for IG conformance.
 - Provide feedback to refine the IG and profiles.
 
