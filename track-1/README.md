@@ -75,20 +75,7 @@ IG Validator-->>FHIR Server: Validation passed
 deactivate IG Validator
 ```
 
-### Scenario 2: Submit via Transaction Bundle
-1. Send resources in one Bundle (type: transaction)
-2. Server processes and returns HTTP 200 with full Bundle response
-
-```mermaid
-sequenceDiagram
-loop Transaction Bundle Submission
-POS App->>FHIR Server: POST /Bundle (type=transaction)
-activate FHIR Server
-FHIR Server-->>POS App: 200 OK + Bundle response
-deactivate FHIR Server
-end
-```
-### Scenario 3: Validate Resource
+### Scenario 2: Validate Resource
 1. Submit resource to $validate
 2. Server returns OperationOutcome with success or conformance errors
 
@@ -105,6 +92,21 @@ FHIR Server-->>POS App: OperationOutcome
 deactivate FHIR Server
 end
 ```
+
+### Scenario 3: Submit via Transaction Bundle
+1. Send resources in one Bundle (type: transaction)
+2. Server processes and returns HTTP 200 with full Bundle response
+
+```mermaid
+sequenceDiagram
+loop Transaction Bundle Submission
+POS App->>FHIR Server: POST /Bundle (type=transaction)
+activate FHIR Server
+FHIR Server-->>POS App: 200 OK + Bundle response
+deactivate FHIR Server
+end
+```
+
 
 
 
