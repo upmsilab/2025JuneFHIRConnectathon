@@ -32,7 +32,7 @@ This track will demonstrate how a Point of Service (POS) application can submit 
 - Use $validate operation for IG conformance.
 - Provide feedback to refine the IG and profiles.
 
-👉 [Full track details here](./track-1/) 
+👉 [Click for track details](./track-1/) 
 
 ### Connectathon Track 2: Search and Retrieval
 
@@ -45,7 +45,7 @@ This track builds on Track 1 by testing RESTful search and retrieval of clinical
 - Verify content accuracy and completeness.
 - Reinforce understanding of FHIR REST API conventions.
 
-👉 [Full track details here](./track-2/) 
+👉 [Click for track details](./track-2/) 
 
 ---
 
