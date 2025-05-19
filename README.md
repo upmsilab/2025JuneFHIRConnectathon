@@ -8,14 +8,14 @@ The two-day Connectathon aims to foster interoperability across health systems b
 ## Connectathon Objectives 
 
 * Introduction of the HL7 FAST Healthcare Interoperability Resources (FHIR) 
-* Data exchange and testing of NHDR FHIR IG and PH Core FHIR IG 
+* Data exchange and testing of the draft NHDR FHIR IG and PH Core FHIR IG 
 * Gather input and feedback on the development of specifications and infrastructure for the future FHIR development including priority functionality that implementers and users require
 * Develop a community of interest to enable participation in the future development of the service
   
 
 ## Tracks and Sample Data
 
-- [Connectathon Track 1: POS Data Submission](#connectathon-track-1-pos-data-submission)
+- [Connectathon Track 1: Point-of-Service (POS) Data Submission](#connectathon-track-1-pos-data-submission)
 - [Connectathon Track 2: FHIR Search and Retrieval](#connectathon-track-2-fhir-search-and-retrieval)
 - [Postman Collections and Data](#sample-postman-collections-and-data)
 
@@ -23,13 +23,13 @@ The two-day Connectathon aims to foster interoperability across health systems b
 
 ### Connectathon Track 1: Point of Service Data Submission
 
-This track will demonstrate how a Point of Service (POS) application can submit health data to a central health data repository. For this track smulation of health data repository is implemented using the HAPI FHIR Server. The track uses the draft NHDR FHIR Implementation Guide (IG) defining the required profiles and value sets for core clinical data exchange such as, Patient, Encounter, Mediation, Observation; <!-- please review and add resoruces which are ready to use --> 
+This track will demonstrate how a Point of Service (POS) application can submit health data to a central health data repository. For this track simulation of a health data repository is implemented using the HAPI FHIR Server. The track uses the draft NHDR FHIR Implementation Guide (IG) defining the required profiles and value sets for core clinical data exchange such as Patient, Encounter, Medication, Observation; <!-- please review and add resources which are ready to use --> 
 
 ### Track goals
 
 - Successfully submit FHIR resources to a central server.
 - Successfully submit FHIR bundle to a central server.
-- Use $validate operation for IG conformance.
+- Use the $validate operation for IG conformance.
 - Provide feedback to refine the IG and profiles.
 
 👉 [Click for track details](./track-1/) 
