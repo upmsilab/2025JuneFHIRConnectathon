@@ -32,7 +32,26 @@ Ontoserver terminology Server | R4  | https://tx.fhirlab.net/fhir |   |
 
 ## Track Scenarios
 
-### Scenario 1: Submit Individual Resources
+
+### Scenario 1: Validate Resource
+1. Submit resource to $validate
+2. Server returns OperationOutcome with success or conformance errors
+
+```mermaid
+sequenceDiagram
+loop Resource Validation
+POS App->>FHIR Server: POST /[resource]/$validate
+activate FHIR Server
+FHIR Server->>IG Validator: validate resource
+activate IG Validator
+IG Validator-->>FHIR Server: OperationOutcome
+deactivate IG Validator
+FHIR Server-->>POS App: OperationOutcome
+deactivate FHIR Server
+end
+```
+
+### Scenario 2: Submit Individual Resources
 1. Create Patient → Encounter → Condition → Medication → Observation → Allergies
 2. Server returns HTTP 201 Created
 3. IG validation is passed
@@ -73,24 +92,6 @@ FHIR Server->>IG Validator: validate resources
 activate IG Validator
 IG Validator-->>FHIR Server: Validation passed
 deactivate IG Validator
-```
-
-### Scenario 2: Validate Resource
-1. Submit resource to $validate
-2. Server returns OperationOutcome with success or conformance errors
-
-```mermaid
-sequenceDiagram
-loop Resource Validation
-POS App->>FHIR Server: POST /[resource]/$validate
-activate FHIR Server
-FHIR Server->>IG Validator: validate resource
-activate IG Validator
-IG Validator-->>FHIR Server: OperationOutcome
-deactivate IG Validator
-FHIR Server-->>POS App: OperationOutcome
-deactivate FHIR Server
-end
 ```
 
 ### Scenario 3: Submit via Transaction Bundle
