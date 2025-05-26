@@ -27,9 +27,9 @@ This track will demonstrate how a Point of Service (POS) application can submit 
 
 ### Track goals
 
+- Use the $validate operation for IG conformance.
 - Successfully submit FHIR resources to a central server.
 - Successfully submit FHIR bundle to a central server.
-- Use the $validate operation for IG conformance.
 - Provide feedback to refine the IG and profiles.
 
 👉 [Click for track details](./track-1/) 
