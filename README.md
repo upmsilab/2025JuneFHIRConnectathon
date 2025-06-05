@@ -1,9 +1,12 @@
 # FHIR Connectathon – June 2025, Metro Manila, Philippines
 
+![Connectathon_Graphic](https://github.com/user-attachments/assets/1d6afce8-7200-45c0-a7ac-02913a0e1ba0)
+
 The FHIR Connectathon will be jointly co-hosted by The Standards and Interoperability Laboratory, under the University of the Philippines Manila National Institutes of Health’s National Telehealth Center (UPM SILab) and the [Commonwealth Scientific and Industrial Research Organisation (CSIRO), Australia](https://www.csiro.au/) in collaboration with The Philippines Department of Health and Philippine Health Insurance Corporation (PhilHealth). The Connectathon is part of the [Strengthening Standards Capability Project (SSCP)](https://sscp.health), for improved adoption of Digital Health Data Standards and Interoperability for the Southeast Asia and Pacific region co-funded by CSIRO and Australian Government Department of Foreign Affairs and Trade (DFAT).
 
 The two-day Connectathon aims to foster interoperability across health systems by providing opportunities for healthcare system developers, business owners, and vendors to participate in critical use cases defined as tracks that focus on clinical and business use cases. The connectathon will also provide testing opportunities for FHIR Implementation Guides (IGs) such as, NHDR FHIR IG and Philippine Core FHIR IG using public FHIR Servers and Terminology. 
 
+[16-17 June 2025, FHIR Connectathon Detailed Program](https://docs.google.com/document/d/1bhlvm3iZteKqJ0CvxhbOCvpamIPmssQcDVH_7WNZXGs/)
 
 ## Connectathon Objectives 
 
@@ -25,6 +28,8 @@ The two-day Connectathon aims to foster interoperability across health systems b
 
 This track will demonstrate how a Point of Service (POS) application can submit health data to a central health data repository. For this track simulation of a health data repository is implemented using the HAPI FHIR Server. The track uses the draft NHDR FHIR Implementation Guide (IG) defining the required profiles and value sets for core clinical data exchange such as Patient, Encounter, Medication, Observation; <!-- please review and add resources which are ready to use --> 
 
+👉 [Click for track details](./track-1/) 
+
 ### Track goals
 
 - Use the $validate operation for IG conformance.
@@ -32,11 +37,21 @@ This track will demonstrate how a Point of Service (POS) application can submit 
 - Successfully submit FHIR bundle to a central server.
 - Provide feedback to refine the IG and profiles.
 
-👉 [Click for track details](./track-1/) 
+### Track Leads
+
+| Name  | Organisation    | 
+|-----------------|-----------------|
+| Cherrie Esteban      | Department of Health, Philippines |
+| Teo Gallano      | Philippine Health Insurance Corporation |
+| John Carter      | CSIRO (SSCP) |
+
+
 
 ### Connectathon Track 2: Search and Retrieval
 
 This track builds on Track 1 by testing RESTful search and retrieval of clinical data submitted by POS applications. Using the same FHIR server and resource profiles, participants will query the server to retrieve data for specific patients and observations. This supports key workflows like clinical review, analytics, and verification of submitted data.
+
+👉 [Click for track details](./track-2/) 
 
 ### Track Goals
 
@@ -45,7 +60,13 @@ This track builds on Track 1 by testing RESTful search and retrieval of clinical
 - Verify content accuracy and completeness.
 - Reinforce understanding of FHIR REST API conventions.
 
-👉 [Click for track details](./track-2/) 
+### Track Leads
+
+| Name  | Organisation    | 
+|-----------------|-----------------|
+| Cherrie Esteban      | Department of Health, Philippines |
+| Teo Gallano      | Philippine Health Insurance Corporation |
+| John Carter      | CSIRO (SSCP) |
 
 ---
 
