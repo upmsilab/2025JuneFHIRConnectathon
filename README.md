@@ -78,8 +78,7 @@ To help participants get started quickly, we’ve prepared Postman collections a
 - Submit transaction bundles
 - Perform FHIR search queries
 
-📥 [Download Postman Collection] <!-- (./POS_Postman_Collection_v2_with_Search.json) --> 
-📥 [Download TestScript JSON] <!-- (./POS_FHIR_TestScript.json) --> 
+📥 [Download Postman Collection](./sample-data/fhir_resources_collection.json)
 
 ---
 
