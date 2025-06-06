@@ -22,7 +22,10 @@ HAPI Test Server | R4     | https://cdr.fhirlab.net/fhir | CRUD, transaction, va
 Ontoserver terminology Server | R4  | https://tx.fhirlab.net/fhir |   |
 
 ## Online Tools Provided
-- Postman Collection with example requests
+
+The tools below allow you to perform experimentation immediately and interact with others. They are the preferred method of exploring FHIR at the connectathon.
+
+- [Postman Collection with example requests](../sample-data/fhir_resources_collection.json).
 - [FHIR validator](https://validator.fhirlab.net)
 - [Sample JSON files for PH Core profile](https://build.fhir.org/ig/UP-Manila-SILab/ph-core/artifacts.html#example-example-instances)
 - [FHIR endpoint](https://cdr.fhirlab.net/fhir) which also works as OpenAPI/SwaggerUI
@@ -30,9 +33,12 @@ Ontoserver terminology Server | R4  | https://tx.fhirlab.net/fhir |   |
 
 ## Offline Tool Options
 
-- [Starting a HAPI server](https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html#server-run-server): Offers the endpoints above
-- [Uploading FHIR IGs](https://github.com/brianpos/UploadFIG#user-content-running-the-utility)
-- 
+While the tools above allow great interactive use they are less usable for repeatable processes. Below are some choices you have in case you want to script and repeat some of your experiments:
+
+- [Starting a HAPI server - `FHIR CLI`](https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html#server-run-server): Offers the endpoints above
+- [Uploading FHIR IGs - `UploadFIG`](https://github.com/brianpos/UploadFIG#user-content-running-the-utility)
+- [Uploading Resources - `Postman local app`](https://www.postman.com/downloads/)
+- [Validating Resources - `FHIR validator`](https://confluence.hl7.org/spaces/FHIR/pages/35718580/Using+the+FHIR+Validator)
 
 
 ## Track success 
