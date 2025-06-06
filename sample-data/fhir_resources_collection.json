@@ -1,0 +1,621 @@
+{
+    "info": {
+        "name": "FHIR Resources Collection",
+        "description": "Collection to upload and validate FHIR resources",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Upload Patient",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Patient-patient-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Patient",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Patient"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Patient",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Patient-patient-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Patient/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Patient",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Search Patient",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Patient?birthdate=1990-01-01&gender=male&_count=10",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Patient"
+                    ],
+                    "query": [
+                        {
+                            "key": "birthdate",
+                            "value": "1990-01-01"
+                        },
+                        {
+                            "key": "gender",
+                            "value": "male"
+                        },
+                        {
+                            "key": "_count",
+                            "value": "10"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Condition",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Condition-condition-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Condition",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Condition"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Condition",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Condition-condition-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Condition/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Condition",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Bundle",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Bundle-transaction-ex 1.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Bundle",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Bundle"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Bundle",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Bundle-transaction-ex 1.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Bundle/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Bundle",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Encounter",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Encounter-encounter-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Encounter",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Encounter"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Encounter",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Encounter-encounter-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Encounter/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Encounter",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Medication",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Medication-medication-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Medication",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Medication"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Medication",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Medication-medication-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Medication/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Medication",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Observation",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Observation-observation-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Observation",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Observation"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Observation",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Observation-observation-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Observation/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Observation",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Search Observation",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Observation?_count=10",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Observation"
+                    ],
+                    "query": [
+                        {
+                            "key": "_count",
+                            "value": "10"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Immunization",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Immunization-immunization-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Immunization",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Immunization"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Immunization",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Immunization-immunization-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Immunization/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Immunization",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Organization",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Organization-organization-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Organization",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Organization"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Organization",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Organization-organization-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Organization/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Organization",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Practitioner",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Practitioner-practitioner-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Practitioner",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Practitioner"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate Practitioner",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "Practitioner-practitioner-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/Practitioner/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "Practitioner",
+                        "$validate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload AllergyIntolerance",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "AllergyIntolerance-allergy-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/AllergyIntolerance",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "AllergyIntolerance"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Validate AllergyIntolerance",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/fhir+json"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {
+                        "src": "AllergyIntolerance-allergy-single-ex.json"
+                    }
+                },
+                "url": {
+                    "raw": "https://fhir-server-endpoint.com/AllergyIntolerance/$validate",
+                    "host": [
+                        "https://fhir-server-endpoint.com"
+                    ],
+                    "path": [
+                        "AllergyIntolerance",
+                        "$validate"
+                    ]
+                }
+            }
+        }
+    ]
+}
