@@ -4,8 +4,8 @@ Once a patient walks into a clinic for a routine check-up or to manage a chronic
 
 This track simulates that workflow using the [PH Core Implementation Guide](https://build.fhir.org/ig/UP-Manila-SILab/ph-core/), representing foundational resources for data exchange.
 
-[!CAUTION]
-**The PH Core FHIR IG and NHDR FHIR IG are made available for this track in initial draft forms with limited resources - The IGs are not suitable for production use or advanced testing.**
+> [!CAUTION]
+> **The PH Core FHIR IG and NHDR FHIR IG are made available for this track in initial draft forms with limited resources - The IGs are not suitable for production use or advanced testing.**
 
 ## Relevance for real-world health-care use-cases: 
 
@@ -54,9 +54,8 @@ Ontoserver terminology Server | R4  | https://tx.fhirlab.net/fhir |   |
 **Critical Information:** Please document your feedback for individual resource based on the clinical data you’re working with. Consider what’s missing, what doesn’t fit well, and where cardinalities or constraints might not align with real-world use. This is a critical step to strengthen the IG, your feedback will help improve IG and it's implementability. <!-- Include link for google form -->
 
 
-[!IMPORTANT]
-
-After every submission, the server will ass
+> [!IMPORTANT]
+> After every submission, the server will assign *server-side* identifiers. You will need to use to these identifiers if you are submitting resources that refer to the newly created objects. [Read here why this is the case](FHIR_Resource_References_Explanation.md). Be aware that you are sharing the server with others, so if you are referring to another participants resources, their changes to resources may affect you workflow.
 
 | Step | Activity                                       | Notes                                                                 | Example |
 |------|------------------------------------------------|-----------------------------------------------------------------------|---------|
