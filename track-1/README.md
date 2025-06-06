@@ -55,8 +55,7 @@ Ontoserver terminology Server | R4  | https://tx.fhirlab.net/fhir |   |
 
 
 [!IMPORTANT]
-
-After every submission, the server will ass
+After every submission, the server will assign *server-side* identifiers. You will need to use to these identifiers if you are submitting resources that refer to the newly created objects. [Read here why this is the case](FHIR_Resource_References_Explanation.md). Be aware that you are sharing the server with others, so if you are referring to another participants resources, their changes to resources may affect you workflow.
 
 | Step | Activity                                       | Notes                                                                 | Example |
 |------|------------------------------------------------|-----------------------------------------------------------------------|---------|
