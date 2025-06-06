@@ -2,11 +2,12 @@
 
 Once a patient walks into a clinic for a routine check-up or to manage a chronic condition, this visit triggers a series of coordinated clinical and administrative actions such as, the patient is identified or registered, a clinician documents observations like blood pressure or temperature, performs procedures such as counselling, prescribes medication, and possibly records immunisation status.
 
-This track simulates that workflow using the PH Core Implementation Guide, representing foundational resources for data exchange. 
+This track simulates that workflow using the [PH Core Implementation Guide](https://build.fhir.org/ig/UP-Manila-SILab/ph-core/), representing foundational resources for data exchange.
 
-**The PH Core FHIR IG and NHDR FHIR IG are made available for this track in initial draft forms with limited resources - The IGs are not suitable for prodution use or advanced testing.**
+[!CAUTION]
+**The PH Core FHIR IG and NHDR FHIR IG are made available for this track in initial draft forms with limited resources - The IGs are not suitable for production use or advanced testing.**
 
-## Relevancy with real world healthcare use cases: 
+## Relevance for real-world health-care use-cases: 
 
 - Primary Care Consultation
 - NCD Encounter
@@ -20,15 +21,23 @@ Server | FHIR Version | Base URL | Capabilities
 HAPI Test Server | R4     | https://cdr.fhirlab.net/fhir | CRUD, transaction, validation
 Ontoserver terminology Server | R4  | https://tx.fhirlab.net/fhir |   |
 
-## Tools Provided:
+## Online Tools Provided
 - Postman Collection with example requests
-- FHIR validator or $validate support
-- Sample JSON files for PH Core profiles
-- Server access URL (HAPI)
+- [FHIR validator](https://validator.fhirlab.net)
+- [Sample JSON files for PH Core profile](https://build.fhir.org/ig/UP-Manila-SILab/ph-core/artifacts.html#example-example-instances)
+- [FHIR endpoint](https://cdr.fhirlab.net/fhir) which also works as OpenAPI/SwaggerUI
+- [FHIR server interactive user interface](https://cdr.fhirlab.net/) which also allows creating queries and listing content.
+
+## Offline Tool Options
+
+- [Starting a HAPI server](https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html#server-run-server): Offers the endpoints above
+- [Uploading FHIR IGs](https://github.com/brianpos/UploadFIG#user-content-running-the-utility)
+- 
+
 
 ## Track success 
 
-1. Submit FHIR resource to $validate aganst FHIR IG
+1. Submit FHIR resource to $validate against FHIR IG
 2. Server returns Operation Outcome with success or conformance errors (fix errors and validate again)
 3. IG validation is passed
 4. Create individual resources such as, Patient → Encounter → Condition → Medication → Observation
@@ -38,11 +47,16 @@ Ontoserver terminology Server | R4  | https://tx.fhirlab.net/fhir |   |
 
 ## Track Scenarios
 
-### Activity 1: Vaidate and submit individual FHIR resources, using Core FHIR IG (Time: 45 min)
+### Activity 1: Validate and submit individual FHIR resources, using Core FHIR IG (Time: 45 min)
 
 **Rationale:** Testing individual FHIR resources is critical during the early stages of Implementation Guide (IG) development. It allows focused validation of each profile in isolation before evaluating how they interact together.
 
 **Critical Information:** Please document your feedback for individual resource based on the clinical data you’re working with. Consider what’s missing, what doesn’t fit well, and where cardinalities or constraints might not align with real-world use. This is a critical step to strengthen the IG, your feedback will help improve IG and it's implementability. <!-- Include link for google form -->
+
+
+[!IMPORTANT]
+
+After every submission, the server will ass
 
 | Step | Activity                                       | Notes                                                                 | Example |
 |------|------------------------------------------------|-----------------------------------------------------------------------|---------|
