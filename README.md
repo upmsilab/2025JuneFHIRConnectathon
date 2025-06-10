@@ -1,4 +1,4 @@
-# FHIR Connectathon – June 2025, Metro Manila, Philippines
+# FHIR Connectathon – June 2025, Pasay City, Philippines
 
 ![Connectathon_Graphic](https://github.com/user-attachments/assets/1d6afce8-7200-45c0-a7ac-02913a0e1ba0)
 
