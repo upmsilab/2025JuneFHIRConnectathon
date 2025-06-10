@@ -6,9 +6,10 @@ The FHIR Connectathon will be jointly co-hosted by The Standards and Interoperab
 
 The two-day Connectathon aims to foster interoperability across health systems by providing opportunities for healthcare system developers, business owners, and vendors to participate in critical use cases defined as tracks that focus on clinical and business use cases. The connectathon will also provide testing opportunities for FHIR Implementation Guides (IGs) such as, NHDR FHIR IG and Philippine Core FHIR IG using public FHIR Servers and Terminology. 
 
-**Important Information**
-[16-17 June 2025, FHIR Connectathon Detailed Program](https://docs.google.com/document/d/1bhlvm3iZteKqJ0CvxhbOCvpamIPmssQcDVH_7WNZXGs/)
-[FHIR Connectathon Logistic Note](https://docs.google.com/document/d/1gNo9n3zDkkLkM0lH3047BaK2q3t-Y2gyvlYvQ1_5fnw)
+## Important Information
+
+- [16-17 June 2025, FHIR Connectathon Detailed Program](https://docs.google.com/document/d/1bhlvm3iZteKqJ0CvxhbOCvpamIPmssQcDVH_7WNZXGs/)
+- [FHIR Connectathon Logistic Note](https://docs.google.com/document/d/1gNo9n3zDkkLkM0lH3047BaK2q3t-Y2gyvlYvQ1_5fnw)
 
 ## Connectathon Objectives 
 
