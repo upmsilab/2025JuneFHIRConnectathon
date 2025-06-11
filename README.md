@@ -84,8 +84,8 @@ To help participants get started quickly, we’ve prepared Postman collections a
 
 📥 [Download Postman Collection](./sample-data/FHIR®_resources_collection.json)
 
-Note: FHIR® is a registered trademarks of Health Level Seven International.  
-
 ---
 
-_For questions, contact the Track Leads, or join Zulip Chat and Community of Practice WhatsApp group:_ <!-- add details -->
+Note: FHIR® is a registered trademarks of Health Level Seven International.  
+
+For questions and queries regarding connectathon contact silab.upm@up.edu.ph
