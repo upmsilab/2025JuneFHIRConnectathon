@@ -10,6 +10,7 @@ The two-day Connectathon aims to foster interoperability across health systems b
 
 - [16-17 June 2025, FHIR® Connectathon Detailed Program](https://docs.google.com/document/d/1bhlvm3iZteKqJ0CvxhbOCvpamIPmssQcDVH_7WNZXGs/)
 - [FHIR® Connectathon Logistic Note](https://docs.google.com/document/d/1gNo9n3zDkkLkM0lH3047BaK2q3t-Y2gyvlYvQ1_5fnw)
+- [FHIR IG Technical Feedback Sheet](https://docs.google.com/spreadsheets/d/1FEyX8O-TSRJp9xOiwvb3-Jc_6K2GLbwwJtkGPNqSVI4/edit?usp=sharing). - Please add technical feedback and comments into the google sheet. It will be reviewed actively during the conenctathon. 
 
 ## Connectathon Objectives 
 
