@@ -22,8 +22,8 @@ The two-day Connectathon aims to foster interoperability across health systems b
 
 ## Tracks and Sample Data
 
-- [Connectathon Track 1: Point-of-Service (POS) Data Submission](#connectathon-track-1-pos-data-submission)
-- [Connectathon Track 2: FHIR® Search and Retrieval](#connectathon-track-2-FHIR®-search-and-retrieval)
+- [Connectathon Track 1: Point-of-Service (POS) Data Submission](##connectathon-track-1-point-of-service-data-submission)
+- [Connectathon Track 2: FHIR® Search and Retrieval](#connectathon-track-2-search-and-retrieval)
 - [Postman Collections and Data](#sample-postman-collections-and-data)
 
 ---
