@@ -40,7 +40,6 @@ While the tools above allow great interactive use they are less usable for repea
 - [Uploading Resources - `Postman local app`](https://www.postman.com/downloads/)
 - [Validating Resources - `FHIR validator`](https://confluence.hl7.org/spaces/FHIR/pages/35718580/Using+the+FHIR+Validator)
 
-
 ## Track success 
 
 1. Submit FHIR resource to $validate against FHIR IG
