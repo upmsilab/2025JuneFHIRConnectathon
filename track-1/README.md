@@ -14,31 +14,22 @@ This track simulates that workflow using the [PH Core Implementation Guide](http
 - Referral Request
 - Immunization
 
-## Servers for Testing
+## FHIR Servers available for testing
 
 Server | FHIR Version | Base URL | Capabilities
 |----------|-------------|---------|-------------|
 HAPI Test Server | R4     | https://cdr.fhirlab.net/fhir | CRUD, transaction, validation
 Ontoserver terminology Server | R4  | https://tx.fhirlab.net/fhir |   |
 
-## Online Tools Provided
+Note: FHIRLab is an open interoprability sandbox. FHIR server in FHIRLab will remain accessible for testing and on-going learning activiites post connectathon.
+
+## Additional tools provided for connectathon
 
 The tools below allow you to perform experimentation immediately and interact with others. They are the preferred method of exploring FHIR at the connectathon.
 
 - [Postman Collection with example requests](../sample-data/fhir_resources_collection.json).
 - [FHIR validator](https://validator.fhirlab.net)
 - [Sample JSON files for PH Core profile](https://build.fhir.org/ig/UP-Manila-SILab/ph-core/artifacts.html#example-example-instances)
-- [FHIR endpoint](https://cdr.fhirlab.net/fhir) which also works as OpenAPI/SwaggerUI
-- [FHIR server interactive user interface](https://cdr.fhirlab.net/) which also allows creating queries and listing content.
-
-## Offline Tool Options
-
-While the tools above allow great interactive use they are less usable for repeatable processes. Below are some choices you have in case you want to script and repeat some of your experiments:
-
-- [Starting a HAPI server - `FHIR CLI`](https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html#server-run-server): Offers the endpoints above
-- [Uploading FHIR IGs - `UploadFIG`](https://github.com/brianpos/UploadFIG#user-content-running-the-utility)
-- [Uploading Resources - `Postman local app`](https://www.postman.com/downloads/)
-- [Validating Resources - `FHIR validator`](https://confluence.hl7.org/spaces/FHIR/pages/35718580/Using+the+FHIR+Validator)
 
 ## Track success 
 
@@ -62,15 +53,15 @@ While the tools above allow great interactive use they are less usable for repea
 > [!IMPORTANT]
 > After every submission, the server will assign *server-side* identifiers. You will need to use to these identifiers if you are submitting resources that refer to the newly created objects. [Read here why this is the case](FHIR_Resource_References_Explanation.md). Be aware that you are sharing the server with others, so if you are referring to another participants resources, their changes to resources may affect you workflow.
 
-| Step | Activity                                       | Notes                                                                 | Example |
-|------|------------------------------------------------|-----------------------------------------------------------------------|---------|
-| 1    | Review PH Core IG profiles with examples       | Focus on profiles like PH Core Patient, Encounter, Observation, etc. |         |
-| 2    | Setup access to test FHIR server               |                                                                       |         |
-| 3    | Create `PH Core Organization` resource         | Can be a clinic, or hospital. You can also use any of the existing organisations                                        |         |
-| 4    | `$validate` the Organization                   |                                                                       |         |
-| 5    | Submit resource to FHIR server    |                                                                       |         |
-| 6    | Create `PH Core Practitioner`                  | Use provided examples, and make changes to your resource. You can also use any of the existing practitioners          |         |
-| 7    | `$validate` the Practitioner                   |                                                                       |         |
+| Step | Activity                                       | Notes                                                                 | 
+|------|------------------------------------------------|-----------------------------------------------------------------------|
+| 1    | Review PH Core IG profiles with examples       | Focus on profiles like PH Core Patient, Encounter, Observation, etc. |
+| 2    | Setup access to test FHIR server               |                                                                       |
+| 3    | Create `PH Core Organization` resource         | Can be a clinic, or hospital. You can also use any of the existing organisations                                        |
+| 4    | `$validate` the Organization                   |                                                                       |
+| 5    | Submit resource to FHIR server    |                                                                       |
+| 6    | Create `PH Core Practitioner`                  | Use provided examples, and make changes to your resource. You can also use any of the existing practitioners          |
+| 7    | `$validate` the Practitioner                   |                                                                       |
 | 8    | Submit resource to FHIR server    |                                                                       |         |
 | 9    | Create `PH Core Patient`                       | Use provided example, customise name, birth date, gender etc.             |         |
 | 10   | `$validate` the Patient                        |                                                                       |         |
@@ -152,6 +143,12 @@ deactivate FHIR Server
 end
 ```
 
+## Supplimentary guides for local testing
+
+- [Starting a HAPI server - `FHIR CLI`](https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html#server-run-server): Offers the endpoints above
+- [Uploading FHIR IGs - `UploadFIG`](https://github.com/brianpos/UploadFIG#user-content-running-the-utility)
+- [Uploading Resources - `Postman local app`](https://www.postman.com/downloads/)
+- [Validating Resources - `FHIR validator`](https://confluence.hl7.org/spaces/FHIR/pages/35718580/Using+the+FHIR+Validator)
 
 
 
