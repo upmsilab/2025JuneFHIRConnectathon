@@ -82,7 +82,7 @@ To help participants get started quickly, we’ve prepared Postman collections a
 - Submit transaction bundles
 - Perform FHIR® search queries
 
-📥 [Download Postman Collection](./sample-data/FHIR®_resources_collection.json)
+📥 [Download Postman Collection](./sample-data/fhir_resources_collection.json)
 
 ---
 
