@@ -1,8 +1,8 @@
-# FHIR® Connectathon – June 2025, Pasay City, Philippines
+# Immunization Connectathon – June 2025, Tagaytay City, Philippines
 
-![Connectathon_Graphic](https://github.com/user-attachments/assets/1d6afce8-7200-45c0-a7ac-02913a0e1ba0)
+<!--![Connectathon_Graphic] (https://github.com/user-attachments/assets/1d6afce8-7200-45c0-a7ac-02913a0e1ba0)-->
 
-The FHIR® Connectathon will be jointly co-hosted by the Standards and Interoperability Laboratory (UPM SILab), under the University of the Philippines Manila National Institutes of Health’s National Telehealth Center and the [Commonwealth Scientific and Industrial Research Organisation (CSIRO), Australia](https://www.csiro.au/) in collaboration with The Philippines Department of Health and Philippine Health Insurance Corporation (PhilHealth). The Connectathon is part of the [Strengthening Standards Capability Project (SSCP)](https://sscp.health), for improved adoption of Digital Health Data Standards and Interoperability for the Southeast Asia and Pacific region co-funded by CSIRO and Australian Government Department of Foreign Affairs and Trade (DFAT).
+The 2025 Immunization Connectathon will be jointly co-hosted by the Standards and Interoperability Laboratory (UPM SILab), under the University of the Philippines Manila National Institutes of Health’s National Telehealth Center in collaboration with The Philippines Department of Health and Philippine Health Insurance Corporation (PhilHealth). The Connectathon is part of the [Strengthening Standards Capability Project (SSCP)](https://sscp.health), for improved adoption of Digital Health Data Standards and Interoperability for the Southeast Asia and Pacific region co-funded by CSIRO and Australian Government Department of Foreign Affairs and Trade (DFAT).
 
 The two-day Connectathon aims to foster interoperability across health systems by providing opportunities for healthcare system developers, business owners, and vendors to participate in critical use cases defined as tracks that focus on clinical and business use cases. The connectathon will also provide testing opportunities for FHIR® Implementation Guides (IGs) such as, NHDR FHIR® IG and Philippine Core FHIR® IG using public FHIR® Servers and Terminology. 
 
@@ -12,12 +12,16 @@ The two-day Connectathon aims to foster interoperability across health systems b
 - [FHIR® Connectathon Logistic Note](https://docs.google.com/document/d/1gNo9n3zDkkLkM0lH3047BaK2q3t-Y2gyvlYvQ1_5fnw)
 - [FHIR IG Technical Feedback Sheet](https://docs.google.com/spreadsheets/d/1FEyX8O-TSRJp9xOiwvb3-Jc_6K2GLbwwJtkGPNqSVI4/edit?usp=sharing). - Please add technical feedback and comments into the Google sheet. It will be reviewed actively during the connectathon. 
 
-## Connectathon Objectives 
+## Immunization Connectathon Objectives 
 
-* Introduction of the HL7 FAST Healthcare Interoperability Resources (FHIR®) 
-* Data exchange and testing of the draft NHDR FHIR® IG and PH Core FHIR® IG 
-* Gather input and feedback on the development of specifications and infrastructure for the future FHIR® development, including priority functionality that implementers and users require
-* Develop a community of interest to enable participation in the future development of the service
+| Objective | Details | 
+|-----------------|-----------------|
+| Data Exchange      | Successfully exchange immunization records using FHIR Immunization resource with at least two other participants (to SEIR and from another participant) |
+| Terminology Mapping  | Validate use of existing codes across the test scenarios |
+| Profile Conformance  | Validate conformance to the Immunization Implementation Guide with the **draft** PH Core as reference |
+| Client-Server Interactions  | Demonstrate read, search, and update interactions between client apps and FHIR servers|
+| Record Validation  | Cross-check vaccination records for completeness based on the Immunization Minimum Data Set |
+| Feedback and Reporting  | Submit structured feedback on gaps in profile conformance, terminology, or server responses |
   
 
 ## Tracks and Sample Data
